@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" android:padding="10dp">
+    <!-- you can use any color you want I used here gray color-->
+    <solid android:color="#6f5d8f"/>
+    <corners
+        android:bottomRightRadius="3dp"
+        android:bottomLeftRadius="3dp"
+        android:topLeftRadius="3dp"
+        android:topRightRadius="3dp"/>
+    <padding
+        android:bottom="4dp"
+        android:top="4dp"
+        android:left="4dp"
+        android:right="4dp"
+        />
+</shape>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:clickable="false"
+    android:focusable="false"
+    android:layout_width="367dp"
+    android:layout_height="220dp">
+
+    <LinearLayout
+        android:id="@+id/share_container"
+        android:orientation="horizontal"
+        android:background="#000000"
+        android:clickable="false"
+        android:focusable="false"
+        android:soundEffectsEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/share_fragment" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/show_container"
+        android:background="#FFFFFF"
+        android:clickable="false"
+        android:focusable="false"
+        android:soundEffectsEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_place_holder"
+            android:scaleType="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/place_holder_300"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="0dp" />
+
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/info_layout"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/split_image_container"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_left"
+                    android:scaleType="fitStart"
+                    android:background="#ff6a6a6a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_weight="0.5"
+                    />
+
+                <ImageView
+                    android:id="@+id/image_right"
+                    android:scaleType="centerCrop"
+                    android:background="#ff6a6a6a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_weight="0.5"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/image_full"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_margin="2dp" />
+        <TextView
+            android:id="@+id/vs_label"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/livecell_vs_label"
+            android:layout_width="56dp"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/livecell_vs_label"
+            android:visibility="gone" />
+        <RelativeLayout
+            android:id="@+id/info_layout"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:background="#B4000000"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/title_label"
+                android:textSize="19sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="TITULO"
+                android:paddingLeft="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingRight="10dp"
+                android:layout_marginTop="4dp" />
+
+            <RelativeLayout
+                android:layout_below="@id/title_label"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/time_label"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/remind_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BDBDBD"
+                    android:text="TITULOXXX"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_marginTop="3dp" />
+
+                <ImageButton
+                    android:id="@+id/remind_button"
+                    android:layout_toLeftOf="@+id/share_button"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/icon_reminder"
+                    android:scaleType="fitXY"
+                    android:padding="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <ImageButton
+                    android:id="@+id/share_button"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/share_button"
+                    android:scaleType="fitXY"
+                    android:padding="0dp"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

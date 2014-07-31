@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.winsportsonline.wso.activities.LoginActivity$PlaceholderFragment">
+
+    <ImageView
+        android:src="@drawable/login_background"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/login_subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:layout_above="@+id/loginButton"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="#3b5998"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/login_button_"/>
+
+
+    <TextView
+        android:id="@+id/login_referencia"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_text"
+        android:layout_below="@+id/loginButton"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_referencia"
+        android:layout_marginTop="10dp"
+        android:maxLength="55"
+        android:maxLines="1"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#44000000"
+        android:textSize="18sp"
+        android:textColorHint="#44000000"
+        android:hint="USUARIO"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/login_pass"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_user"
+        android:layout_marginTop="14dp"
+        android:text=""
+        android:hint="PASS"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:autoText="true"
+        android:maxLines="1"
+        android:maxLength="55"
+        android:textColor="#44000000"
+        android:textSize="18sp"
+        android:textColorHint="#44000000" />
+
+    <Button
+        android:id="@+id/loginButton_2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="#F6BA2B"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_pass"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:text="@string/login_button"/>
+
+
+</RelativeLayout>

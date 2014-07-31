@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:background="#12212B"
+    android:orientation="horizontal"
+    android:layout_gravity="fill_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--"#12212B"-->
+    <ImageButton
+        android:src="@drawable/btn_menu"
+        android:background="#00000000"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:id="@+id/item_menu"/>
+
+    <ImageButton
+        android:visibility="gone"
+        android:src="@drawable/icon_help"
+        android:layout_toRightOf="@id/item_menu"
+        android:background="?attr/actionBarItemBackground"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_width="48dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:id="@+id/item_help"/>
+
+    <LinearLayout
+        android:clipChildren="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/actionbar_live_button"
+            android:background="#D46419"
+            android:text="EN VIVO"
+            android:textColor="@android:color/white"
+            android:scaleType="centerCrop"
+            android:layout_width="155dp"
+            android:textSize="23dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/actionbar_vod_button"
+            android:src="@drawable/navbar_vod_button"
+            android:background="#00FFFFFF"
+            android:text="VOD"
+            android:textColor="@android:color/white"
+            android:scaleType="centerCrop"
+            android:layout_width="155dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_headbar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

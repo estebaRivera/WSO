@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ultimos_partidos"
+            android:background="@drawable/back_programados"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="360dp">
+
+            <TextView
+                android:id="@+id/last_matches_title_label"
+                android:textColor="#5E5E5E"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/vod_last_matches_title"/>
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_below="@+id/last_matches_title_label"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/last_matches_container"
+                    android:padding="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ultimos_programas"
+            android:background="@drawable/back_programados"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="360dp">
+
+            <TextView
+                android:id="@+id/last_programs_title_label"
+                android:textColor="#5E5E5E"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/vod_last_programs_title"/>
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_below="@+id/last_programs_title_label"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/last_programs_container"
+                    android:padding="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:jwp="http://schemas.android.com/apk/res-auto/com.longtailvideo.jwplayer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:animateLayoutChanges="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:id="@+id/video_preview"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.longtailvideo.jwplayer.JWPlayerView
+            android:id="@+id/jwplayerView"
+            android:background="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            jwp:controls="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/player_native"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/video_view" />
+    </RelativeLayout>
+
+</RelativeLayout>

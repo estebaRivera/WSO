@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="JWPlayerView">
+        <attr name="controls" format="boolean" />
+        <!--<attr name="logo" format="boolean" />-->
+        <attr name="file" format="string" />
+    </declare-styleable>
+
+</resources>

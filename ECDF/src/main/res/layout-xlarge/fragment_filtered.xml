@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back_programados"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="1230dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/filters_title_label"
+            android:textColor="#5E5E5E"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:text="xxxxx"/>
+
+        <!--<com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView -->
+        <GridView
+            android:id="@+id/gridview"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:layout_below="@+id/last_matches_title_label"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:horizontalSpacing="16dp"
+            android:verticalSpacing="16dp"
+            android:clipToPadding="false"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/no_result"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image"
+                    android:src="@drawable/no_result" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="No hay resultados"
+                    android:id="@+id/text"
+                    android:textColor="#000000"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

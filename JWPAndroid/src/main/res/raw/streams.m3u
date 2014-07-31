@@ -1,0 +1,364 @@
+### HLS Test Streams
+
+# File format:
+# URLs, preceded by some metadata in the form of comments.
+# Empty lines are used to separate comments from metadata.
+# The first line of the metadata should contain the name of the stream.
+# The rest of the lines contain the description of the stream.
+# A metadata line starting with "tag:" represents a tag,
+# which can be used for filtering streams. 
+
+#
+# Single bitrate HLS streams
+#
+
+# BipBop
+# H264 Baseline, AAC, 240p, mediafilesegmenter
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8
+
+# Broken encryption
+# tag: demoplayer
+# tag: hls
+# tag: encrypted
+# tag: single-bitrate
+https://cloudtakes.s3.amazonaws.com/enc.m3u8
+
+# Captions
+# H264 Main, AAC, 480p, apple
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/captions/playlist.m3u8
+
+# ArtBeats
+# H264 High, AAC, 360p, flashmediaserver
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/artbeats/manifest.m3u8
+
+# Oceans
+# H264 Baseline, AAC, 300p, codeshop
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/oceans/oceans-audio=65000-video=370000.m3u8
+
+# Envivio
+# H264 High, AAC, 240p, envivio
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/envivio/manifest.m3u8
+
+# Sintel (Wowza)
+# H264 Main, AAC, 400p, wowza
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/sintel/playlist_329.m3u8
+
+# Big Buck Bunny (Bits on the Run)
+# H264 Main, AAC, 360p, ffmpeg
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/bbbfull/bbbfull640x360.m3u8
+
+# Animoto
+# H264 Main, AAC, 240p, ffmpeg
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/animoto/manifest.m3u8
+
+# Short
+# H264 Main, AAC, 480p, flashmediaserver
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/short/short.m3u8
+
+# Boxee
+# H264 Main, AAC, 580p, boxee
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://tv.boxee.tv/playrec/C8BE19221242/0/0/201000000/3/1355290200/1355292000/r.m3u8
+
+# Cielo
+# H264 Baseline, MP3, 240p
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/cielo/playlist.m3u8
+
+# KingCell
+# H264 Baseline, MP3, 240p, ffmpeg
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/kingcell/playlist.m3u8
+
+# Sintel Live (Wowza)
+# H264 Baseline, AAC
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+# tag: live
+http://54.243.54.146:1935/live/sintel/playlist.m3u8
+
+# Sintel DVR (Wowza)
+# H264 Baseline, AAC
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+# tag: live
+http://54.243.54.146:1935/dvr/sintel/playlist.m3u8
+
+# Sintel Live Encrypted (Wowza)
+# H264 Baseline, AAC
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+# tag: live
+# tag: encrypted
+http://54.243.54.146:1935/live/_definst_/encrypted/sintel/playlist.m3u8
+
+# Sintel (Baseline, Wowza)
+# H264 Baseline, AAC
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://54.243.54.146:1935/vod/_definst_/mp4:sintel_full/sint_480.mp4/manifest.m3u8
+
+# Sintel (Baseline, USP)
+# H264 Baseline, AAC
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://54.243.141.106/media/sintel_full/sint_480.ism/sint_480.m3u8
+
+# Sintel (Live, USP)
+# H264 Baseline, AAC
+# tag: demoplayer
+# tag: hls
+# tag: live
+# tag: single-bitrate
+http://54.243.141.106/media/sintel_live.isml/sintel_live.m3u8
+
+# Sintel (Baseline, FMS)
+# H264 Baseline, AAC
+# tag: demoplayer
+# tag: hls
+# tag: single-bitrate
+http://23.23.234.174/hls-vod/sintel_full/sint_480.mp4.m3u8
+
+# More4Plus1
+# tag: demoplayer
+# tag: hls
+# tag: encrypted
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/more4plus1/playlist.m3u8
+
+# Run Devil Run
+# tag: demoplayer
+# tag: hls
+# tag: encrypted
+# tag: single-bitrate
+http://218.210.127.133/movies/6/2000000/RunDevilRun_tmp.m3u8
+
+# Custom IV
+# tag: demoplayer
+# tag: hls
+# tag: encrypted
+# tag: single-bitrate
+http://playertest.longtailvideo.com/adaptive/customIV/prog_index.m3u8
+
+# Sintel Encrypted (Wowza)
+# tag: demoplayer
+# tag: hls
+# tag: encrypted
+# tag: single-bitrate
+http://54.243.54.146:1935/vod/_definst_/mp4:encrypted/sintel_full/sint_480.mp4/manifest.m3u8
+
+# Sintel Encrypted (USP, Single Bitrate)
+# tag: demoplayer
+# tag: hls
+# tag: encrypted
+# tag: single-bitrate
+http://54.243.141.106/media/encrypted/sintel_full/sint_480.ism/sint_480.m3u8
+
+# Sintel Encrypted (USP, Live)
+# tag: demoplayer
+# tag: hls
+# tag: encrypted
+# tag: single-bitrate
+# tag: live
+http://54.243.141.106/media/encrypted/sintel_live.isml/sintel_live.m3u8
+
+#
+# Adaptive HLS streams
+#
+
+# BipBop
+# H264 Baseline, AAC, [160p, 260p, 360p], mediafilesegmenter
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://playertest.longtailvideo.com/adaptive/bipbop/bipbopall.m3u8
+
+# Big Buck Bunny Trailer
+# H264, [180p, 360p, 720p, 1080p], Flash Media Server
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://23.23.175.6/vod/media/bbb_trailer/bbb_hls.m3u8
+
+# Oceans
+# H264 Baseline, AAC, [160p, 300p, 530p], codeshop
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://playertest.longtailvideo.com/adaptive/oceans/oceans.m3u8
+
+# Oceans (labels)
+# H264 Baseline, AAC, [160p, 300p, 530p], codeshop, levels contain names
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://playertest.longtailvideo.com/adaptive/oceans/labels.m3u8
+
+# Sintel (Wowza)
+# [180p, 270p, 360p, 410p, 720p, 1080p], Wowza Media Server
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://54.243.54.146:1935/vod/smil:sintel_full.smil/manifest.m3u8
+
+# Sintel (FMS)
+# [180p, 270p, 360p, 410p, 720p, 1080p], Flash Media Server
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://23.23.234.174/vod/sintel_full.m3u8
+
+# Sintel (USP)
+# [180p, 270p, 360p, 410p, 720p, 1080p], Unified Streaming Platform
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://54.243.141.106/media/sintel_full.ismv/sintel_full.m3u8
+
+# Sintel (Encrypted, USP)
+# [180p, 270p, 360p, 410p, 720p, 1080p], Unified Streaming Platform
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+# tag: encrypted
+http://54.243.141.106/media/encrypted/sintel_full.ism/sintel_full.m3u8
+
+# Big Buck Bunny (Bits on the Run)
+# H264 Main, AAC, [180p, 360p, 720p], ffmpeg
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://playertest.longtailvideo.com/adaptive/bbbfull/bbbfull.m3u8
+
+# Sintel (Wowza, dimensions)
+# H264 Baseline -> Main, AAC, [180p, 360p, 720p, 1080p], wowza
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://54.243.54.146:1935/vod/smil:sintel_full_dim.smil/manifest.m3u8
+
+# Sintel (Wowza, unsorted)
+# H264 Baseline -> Main, AAC, [180p, 360p, 720p, 1080p], wowza
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://54.243.54.146:1935/vod/smil:sintel_full_unsorted.smil/manifest.m3u8
+
+# Surf Video
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://planet.casadehood.com/jwplayer/tests/NKE-LAM-TEST.m3u8
+
+# Talent
+# H264 Baseline, [180p, 240p, 360p], ffmpeg
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://playertest.longtailvideo.com/adaptive/talent/manifest.m3u8
+
+# Jim Test
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://livestreams.omroep.nl/live/npo/tests/testjim/testjim.isml/testjim.m3u8
+
+# Machete
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+http://192.168.20.152/machete.m3u8
+#http://demo.unified-streaming.com/video/machete/machete.ism/machete.m3u8
+
+# Ibiza On TV
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+# tag: live
+http://46.249.213.87/iPhone/broadcast/ibizaontv-tablet.3gp.m3u8?trackingid=3041310000&m3usessid=c4eac8f76894284359d8418eec3bccbd&len=38&gtime=1355851900&guid=b4d359c02b664030800d123456789012&da=0&hk=FB1B78D5A7D22EED542E89AB128966CC
+
+# Oceans
+# tag: demoplayer
+# tag: hls
+# tag: encrypted
+# tag: adaptive
+http://demo.unified-streaming.com/video/oceans/oceans_aes.ism/oceans_aes.m3u8
+
+# RTL Z (Live)
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+# tag: live
+http://adaptive.rtl.nl/live/enc214.isml/Manifest(format=m3u8-aapl).m3u8
+
+# NPO TestStream
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+# tag: live
+http://test.livestreams.omroep.nl/live/npo/tests/livestreamtest/livestreamtest.isml/livestreamtest.m3u8
+
+# HitRadio
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+# tag: live
+# tag: audio-only
+http://217.118.160.231/ok/hitradio-lc.isml/hitradio-lc.m3u8
+
+# RTL Radio BERLIN
+# AACV2
+# tag: demoplayer
+# tag: hls
+# tag: adaptive
+# tag: live
+# tag: audio-only
+http://217.118.160.231/ok/hitradio-aacv2.isml/hitradio-aacv2.m3u8
+
+#
+# MP4 Progressive
+#
+
+# Sintel (Bits on the Run)
+# H264, AAC, 200p
+# tag: demoplayer
+# tag: mp4
+http://content.bitsontherun.com/videos/3XnJSIm4-52qL9xLP.mp4

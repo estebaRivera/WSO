@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#3F4C52"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:layout_width="320dp"
+    android:layout_marginTop="-30dp"
+    android:layout_marginBottom="-30dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/user_info_container"
+        android:background="#3F4C52"
+        android:layout_width="@dimen/slidemenu_content_width"
+        android:layout_height="125dp">
+
+        <com.makeramen.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_picture"
+            app:corner_radius="22dp"
+            android:layout_marginTop="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/username_label"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/profile_picture"
+            android:layout_toLeftOf="@+id/profile_picture"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esteban Rivera"/>
+
+        <EditText
+            android:layout_marginBottom="8dp"
+            android:id="@+id/menu_search"
+            android:textDirection="ltr"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:background="@drawable/custom_edittext"
+            android:textColor="#88FFFFFF"
+            android:hint="Buscar"
+            android:layout_alignRight="@+id/username_label"
+            android:layout_alignParentBottom="true"
+            android:gravity="start"
+            android:layout_width="188dp"
+            android:layout_height="32dp"
+            android:capitalize="words" />
+
+        <ImageButton
+            android:id="@+id/menu_search_button"
+            android:layout_alignBottom="@+id/menu_search"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginRight="7dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_below="@+id/user_info_container"
+        android:layout_width="wrap_content"
+        android:background="#3F4C52"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:background="#3F4C52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <!-- EN VIVO-->
+            <ImageView
+                android:layout_above="@+id/menu_en_vivo"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/menu_en_vivo"
+                android:textColor="#55FFFFFF"
+                android:background="@drawable/slide_menu_button_bg"
+                android:gravity="left"
+                android:paddingLeft="22dp"
+                android:paddingTop="8dp"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_info_container"
+                android:text="@string/slidemenu_live_button"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_below="@+id/menu_en_vivo"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#11FFFFFF" />
+
+
+            <!-- FUTBOL VOD-->
+            <TextView
+                android:id="@+id/menu_futbol_vod"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:layout_below="@id/menu_en_vivo"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:textAlignment="gravity"
+                android:paddingLeft="22dp"
+                android:text="@string/slidemenu_vod_button"
+                android:background="@drawable/bg_titulomenu"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_below="@+id/menu_futbol_vod"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- LIGA POSTOBÓN-->
+            <Button
+                android:id="@+id/menu_liga"
+                android:textColor="#55FFFFFF"
+                android:background="@drawable/slide_menu_button_bg"
+                android:gravity="left"
+                android:paddingLeft="22dp"
+                android:paddingTop="8dp"
+                android:textStyle="bold"
+                android:layout_below="@id/menu_futbol_vod"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:text="@string/slidemenu_vod_button_liga"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_below="@+id/menu_liga"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- COPA POSTOBÓN-->
+            <Button
+                android:id="@+id/menu_copa"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/slide_menu_button_bg"
+                android:gravity="left"
+                android:paddingLeft="22dp"
+                android:paddingTop="8dp"
+                android:layout_below="@id/menu_liga"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:text="@string/slidemenu_vod_button_copa"/>
+
+            <ImageView
+                android:layout_below="@+id/menu_copa"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- TORNEO POSTOBÓN-->
+            <Button
+                android:id="@+id/menu_torneo"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/slide_menu_button_bg"
+                android:gravity="left"
+                android:paddingLeft="22dp"
+                android:paddingTop="8dp"
+                android:layout_below="@id/menu_copa"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:text="@string/slidemenu_vod_button_torneo"/>
+
+            <ImageView
+                android:layout_below="@+id/menu_torneo"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- FINALES-->
+            <Button
+                android:id="@+id/menu_final"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/slide_menu_button_bg"
+                android:gravity="left"
+                android:paddingLeft="22dp"
+                android:paddingTop="8dp"
+                android:layout_below="@id/menu_torneo"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:text="@string/slidemenu_vod_button_finales"/>
+
+            <ImageView
+                android:layout_below="@+id/menu_final"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- PROGRAMAS VOD-->
+            <TextView
+                android:id="@+id/menu_programas"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/menu_final"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:textAlignment="gravity"
+                android:paddingLeft="22dp"
+                android:background="@drawable/bg_titulomenu"
+                android:text="@string/slidemenu_vod_button_programas"/>
+
+            <ImageView
+                android:layout_below="@+id/menu_programas"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- CONEXIONES DEPORTES-->
+            <Button
+                android:id="@+id/menu_conexion"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/slide_menu_button_bg"
+                android:gravity="left"
+                android:paddingLeft="22dp"
+                android:paddingTop="8dp"
+                android:layout_below="@id/menu_programas"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:text="@string/slidemenu_vod_button_programas_conexion"/>
+
+            <ImageView
+                android:layout_below="@+id/menu_conexion"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- ACCESO-->
+            <Button
+                android:id="@+id/menu_acceso"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/slide_menu_button_bg"
+                android:gravity="left"
+                android:paddingLeft="22dp"
+                android:paddingTop="8dp"
+                android:layout_below="@id/menu_conexion"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:text="@string/slidemenu_vod_button_programas_acceso"/>
+
+            <ImageView
+                android:layout_below="@+id/menu_acceso"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- SESSION-->
+            <TextView
+                android:id="@+id/menu_session"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/menu_final"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:textAlignment="gravity"
+                android:paddingLeft="22dp"
+                android:background="@drawable/bg_titulomenu"
+                android:text="SESIÓN"/>
+
+            <ImageView
+                android:layout_below="@+id/menu_programas"
+                android:background="#11FFFFFF"
+                android:layout_width="320dp"
+                android:layout_height="1dp" />
+
+            <!-- CERRAR SESSION-->
+            <Button
+                android:id="@+id/cerrar_session"
+                android:textColor="#55FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/slide_menu_button_bg"
+                android:gravity="left"
+                android:paddingLeft="22dp"
+                android:paddingTop="8dp"
+                android:layout_below="@id/menu_programas"
+                android:layout_width="@dimen/slidemenu_content_width"
+                android:layout_height="50dp"
+                android:text="CERRAR SESIÓN"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

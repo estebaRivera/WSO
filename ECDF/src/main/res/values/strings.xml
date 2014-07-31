@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Win Sports Online</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- LOGIN -->
+    <string name="login_username_placeholder">Email</string>
+    <string name="login_password_placeholder">Password</string>
+    <string name="login_button">INGRESA AHORA</string>
+    <string name="login_button_">INICIAR SESIÓN CON FACEBOOK</string>
+    <string name="login_text">Ingresa con tu cuenta</string>
+    <string name="login_user">USUARIO</string>
+    <string name="login_pass">CONTRASEÑA</string>
+    <string name="login_title">Ingresa para vivir la experiencia Win Sports Online</string>
+
+    
+    <!-- Slide Menu -->
+    <string name="slidemenu_logout">CERRAR SESIÓN</string>
+    <string name="slidemenu_main">PRINCIPAL</string>
+    <string name="slidemenu_filters">FILTROS</string>
+    <string name="slidemenu_live_button">EN VIVO</string>
+    <string name="slidemenu_vod_button"> FÚTBOL VOD</string>
+    <string name="slidemenu_vod_button_liga"> LIGA POSTOBÓN</string>
+    <string name="slidemenu_vod_button_copa"> COPA POSTOBÓN</string>
+    <string name="slidemenu_vod_button_torneo"> TORNEO POSTOBÓN</string>
+    <string name="slidemenu_vod_button_finales"> FINALES POSTOBÓN</string>
+
+    <string name="slidemenu_vod_button_programas"> PROGRAMAS VOD</string>
+    <string name="slidemenu_vod_button_programas_conexion"> CONEXIÓN DEPORTES</string>
+    <string name="slidemenu_vod_button_programas_acceso"> ACCESO</string>
+
+    <!-- Share View -->
+    <string name="share_title">COMPARTIR</string>
+    <string name="imagepicker_title">SELECCIONA LA IMAGEN QUE DESEAS COMPARTIR</string>
+    <string name="publish_tweet_button">TWEET</string>
+    <string name="publish_facebook_button">PUBLICAR EN FACEBOOK</string>
+    <string name="publish_facebook_title">Publicar en Facebook</string>
+    <string name="publish_twitter_title">Publicar en Twitter</string>
+
+    <!-- Live View -->
+    <string name="live_reminder_button">RECORDAR</string>
+    <string name="live_nextmatches_header">PRÓXIMOS EVENTOS</string>
+
+    <!-- Live View Cell -->
+    <string name="livecell_vs_label">VS</string>
+
+    <!-- VOD -->
+    <string name="vod_highlight_title">DESTACADOS</string>
+    <string name="vod_last_programs_title">ÚLTIMOS PROGRAMAS</string>
+    <string name="vod_last_matches_title">ÚLTIMOS PARTIDOS</string>
+
+</resources>

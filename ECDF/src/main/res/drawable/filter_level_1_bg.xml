@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_active="true">
+        <shape
+            android:shape="rectangle" android:padding="10dp">
+            <!-- you can use any color you want I used here gray color-->
+            <solid android:color="#ff434343"/>
+            <corners
+                android:bottomRightRadius="3dp"
+                android:bottomLeftRadius="3dp"
+                android:topLeftRadius="3dp"
+                android:topRightRadius="3dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape
+            android:shape="rectangle" android:padding="10dp">
+            <!-- you can use any color you want I used here gray color-->
+            <solid android:color="#5F5F5F"/>
+            <corners
+                android:bottomRightRadius="3dp"
+                android:bottomLeftRadius="3dp"
+                android:topLeftRadius="3dp"
+                android:topRightRadius="3dp"/>
+        </shape>
+    </item>
+
+
+
+
+</selector>
